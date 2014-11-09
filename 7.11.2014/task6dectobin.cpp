@@ -5,9 +5,11 @@ int main(){
     cout << "Enter number:" << endl;
     cin >> number;
     cout << number << " backwards in binary is: " << endl;
-    while(number > 0) {
-        int binary = number % 2;
+    int bin = 0, k = 1;
+    while (number){
+        bin += (number % 2) * k;
+        k *= 10;
         number /= 2;
-        cout << binary;
     }
+    cout << bin;
 }
