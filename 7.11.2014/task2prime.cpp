@@ -9,7 +9,7 @@ int main(){
        if(check==0){
             cout << number << " is not prime, it's divisible by " << i << endl;
             i=number;}
-       if(check!=0 and i==number-1){
+       if(check!=0 && i==number-1){
             cout << number << " is prime." << endl;}
         }
 }
