@@ -1,3 +1,7 @@
+/*
+Hristiyan Markov, Statistics, f.n. 147
+*/
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -11,8 +15,10 @@ string winner;
 // Checks if coords entered are legal
 int legal(int n, int m)
 {
+    // checks if spot is already taken
     if(pole[n][m]!='_')
         return 0;
+    // checks if spot is in board
     if(n<0 || n>2 || m<0 || m>2)
         return 0;
 }
@@ -93,7 +99,7 @@ int main()
 {
     char player1='X', player2='O';
     int a, b, counter=1;
-    cout << "Enter coords as 2 integers as follows:" << endl;
+    cout << "Enter coords as 2 integers as follows:\n" << endl;
     cout << "0 0 | 0 1 | 0 2\n---------------\n1 0 | 1 1 | 1 2\n---------------\n2 0 | 2 1 | 2 2\n" << endl;
 
     do
